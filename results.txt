@@ -1,0 +1,6 @@
+Pattern 1:
+Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>
+Pattern 2:
+Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>
+Pattern 3:
+Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>

@@ -1,6 +1,73 @@
-Pattern 1:
-Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>
-Pattern 2:
-Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>
-Pattern 3:
-Usage: ./forky <positive integer - between 1 and 256> <positive integer - pattern number between 1 and 3>
+Pattern 1: creating 5 processes 
+Process 0 (pid 1154) created: will sleep for 8 seconds 
+Process 0 (pid 1154) exiting 
+Pattern 1: creating 5 processes 
+Parent: created child 0 (pid 1154) 
+Parent: created child 1 (pid 1155) 
+Process 2 (pid 1156) created: will sleep for 8 seconds 
+Process 2 (pid 1156) exiting 
+Pattern 1: creating 5 processes 
+Parent: created child 0 (pid 1154) 
+Process 1 (pid 1155) created: will sleep for 8 seconds 
+Process 1 (pid 1155) exiting 
+Pattern 1: creating 5 processes 
+Parent: created child 0 (pid 1154) 
+Parent: created child 1 (pid 1155) 
+Parent: created child 2 (pid 1156) 
+Parent: created child 3 (pid 1157) 
+Process 4 (pid 1158) created: will sleep for 8 seconds 
+Process 4 (pid 1158) exiting 
+Pattern 1: creating 5 processes 
+Parent: created child 0 (pid 1154) 
+Parent: created child 1 (pid 1155) 
+Parent: created child 2 (pid 1156) 
+Process 3 (pid 1157) created: will sleep for 8 seconds 
+Process 3 (pid 1157) exiting 
+Pattern 1: creating 5 processes 
+Parent: created child 0 (pid 1154) 
+Parent: created child 1 (pid 1155) 
+Parent: created child 2 (pid 1156) 
+Parent: created child 3 (pid 1157) 
+Parent: created child 4 (pid 1158) 
+**Pattern 1: All processes created 
+Parent (pid 1153) exiting 
+**Pattern 1: All children have exited
+ 
+Pattern 2: creating 5 processes 
+Child 0 (pid 1209): starting 
+Child 1 (pid 1210): starting 
+Child 2 (pid 1211): starting 
+Child 3 (pid 1212): starting 
+Child 4 (pid 1213): starting 
+Child 4 (pid 1213), [no children created] sleeping 2 seconds 
+Child 4 (pid 1213) exiting.
+Pattern 2: creating 5 processes 
+Child 0 (pid 1209): starting 
+Child 1 (pid 1210): starting 
+Child 2 (pid 1211): starting 
+Child 3 (pid 1212): starting 
+Child 3 (pid 1212), sleeping 4 seconds after creating child 4 (pid 1213) 
+Child 3 (pid 1212), waiting for child 4 (pid 1213) 
+Child 3 (pid 1212) exiting.
+Pattern 2: creating 5 processes 
+Child 0 (pid 1209): starting 
+Child 1 (pid 1210): starting 
+Child 2 (pid 1211): starting 
+Child 2 (pid 1211), sleeping 2 seconds after creating child 3 (pid 1212) 
+Child 2 (pid 1211), waiting for child 3 (pid 1212) 
+Child 2 (pid 1211) exiting.
+Pattern 2: creating 5 processes 
+Child 0 (pid 1209): starting 
+Child 1 (pid 1210): starting 
+Child 1 (pid 1210), sleeping 7 seconds after creating child 2 (pid 1211) 
+Child 1 (pid 1210), waiting for child 2 (pid 1211) 
+Child 1 (pid 1210) exiting.
+Pattern 2: creating 5 processes 
+Child 0 (pid 1209): starting 
+Child 0 (pid 1209), sleeping 8 seconds after creating child 1 (pid 1210) 
+Child 0 (pid 1209), waiting for child 1 (pid 1210) 
+Child 0 (pid 1209) exiting.
+Pattern 2: creating 5 processes 
+Parent: created child 0 (pid 1209)
+Parent: child 0 (pid 1209) has exited
+**Pattern 2: All children have exited

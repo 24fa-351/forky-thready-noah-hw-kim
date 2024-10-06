@@ -7,6 +7,12 @@ int main(int argc, char *argv[]) {
     int numOfProcesses;
     int patternNum;
 
+    FILE *file = freopen("results.txt", "a", stdout);
+    if (file == NULL) {
+        perror("Failed to open file");
+        exit(EXIT_FAILURE);
+    }
+
     // not enough arguments passed
     if (argc < 3 
         || !argv[1]
@@ -29,6 +35,8 @@ int main(int argc, char *argv[]) {
     } else {
         printf("invalid");
     }
+
+    fclose(file);
 
     return 0;
 }

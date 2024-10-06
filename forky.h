@@ -1,5 +1,5 @@
-#ifndef FORKY_THREADY_H
-#define FORKY_THREADY_H
+#ifndef FORKY_H
+#define FORKY_H
 
 #include <stdio.h>
 #include <stdlib.h>

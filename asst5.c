@@ -1,4 +1,4 @@
-#include "forky_thready.h"
+#include "forky.h"
 
 /*
 Assignment 6: forky-thready

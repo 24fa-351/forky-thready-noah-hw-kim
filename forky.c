@@ -1,4 +1,4 @@
-#include "forky_thready.h"
+#include "forky.h"
 
 void child_process(int processNum) {
     printf("Process %d(%d) beginning \n", processNum, getpid());

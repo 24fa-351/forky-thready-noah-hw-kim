@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stdio.h": "c",
+        "time.h": "c",
+        "forky_thready.h": "c",
+        "forky.h": "c",
+        "stdlib.h": "c",
+        "stdbool.h": "c"
+    }
+}
